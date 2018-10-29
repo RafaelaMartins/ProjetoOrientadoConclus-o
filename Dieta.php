@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -15,7 +9,7 @@ and open the template in the editor.
 	$Finalidade= $_POST['Finalidade'];
 	$Total= $_POST['Total'];
         $connect = mysql_connect('127.0.0.1','root','');
-		$db = mysql_select_db('trabalho_rafaela');
+		$db = mysql_select_db('projeto');
                 $query_select = "INSERT INTO dieta (dieNome,dieFinalidade,dieCaloriaTotal) value ('$nome','$Finalidade',$Total)";
                 $Insercao = mysql_query($query_select,$connect);
                 

@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -21,7 +15,7 @@ and open the template in the editor.
     
     
         $connect = mysql_connect('127.0.0.1','root','');
-        $db = mysql_select_db('mydb');
+        $db = mysql_select_db('projeto');
 	$query_select = "SELECT tipCodigo FROM Tipos_Alimentos WHERE tipNome = '$TipoAlimento' order by tipCodigo";
 	$select = mysql_query($query_select,$connect);
                 while ($array = mysql_fetch_array($select)) {

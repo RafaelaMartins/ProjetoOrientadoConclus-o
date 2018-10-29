@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
+<?php
 				
 				$nomeUsuario = $_POST['Nome'];
 				$EmailUsuario = $_POST['Email'];
@@ -20,7 +8,7 @@ and open the template in the editor.
                                 $loginUsuario = $_POST['Login'];
                                 $senhaUsuario = MD5($_POST['senha']);
                                 $connect = mysql_connect('127.0.0.1','root','');
-				$db = mysql_select_db('mydb');
+				$db = mysql_select_db('projeto');
 				$query_select = "SELECT Login  FROM cadastro WHERE login = '$loginUsuario'";
 				$select = mysql_query($query_select,$connect);
 				$array = mysql_fetch_array($select);
@@ -51,5 +39,3 @@ and open the template in the editor.
 									}
 								 }    
         ?>
-    </body>
-</html>
