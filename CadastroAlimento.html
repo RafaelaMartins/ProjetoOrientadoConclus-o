@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <form name="CadastroAlimento" action="CadastroAlimento.php" method="post" >
+            <input type="Hidden" name="AnyFormSubject">
+            <div>
+                <label>Nome do Alimento</label>
+                <input type="Text" name="Nome" id="Nome" size="40">
+            </div>
+            <div>
+                <label>Carboidratos</label>
+                <input type="Text" name="Carboidratos" id ="Carboidratos" size="40">
+            </div>
+            <div>
+                <label>Proteinas</label>
+                <input type="Text" name="Proteinas" id="Proteinas" size="40">
+            </div>
+            <div>
+                <label>Gorduras Totais</label>
+                <input type="Text" name="Gorduras" id="Gorduras" size="40">
+            </div>
+            <div>
+                <label>Fibras</label>
+                <input type="Text" name="Fibras" id="Fibras" size="40">
+            </div>
+            <div>
+                <label>Tipo de Alimento</label>
+                <select name="Tipo" id="Tipo">
+                    <option value="Frutas">Frutas</option>
+                    <option value="Legumes e Verduras">Legumes e Verduras</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Lacticinios">Lacticinios</option>
+                    <option value="Massas">Massas </option>
+                    <option value="Grãos">Grãos</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Doces">Doces</option>
+                    <option value="Outros">Outros</option> 
+                </select>
+            </div>
+            <div>
+                <label>Calorias</label>
+                <input type="Text" name="Calorias" id="Calorias" size="40" ><br>
+            </div>
+            <div>
+                <label>Joule</label>
+                <input type="Text" name="Joule" id="Joule" size="40"><br>
+            </div>
+            <div>
+                <label>Tipo de Porção</label>
+                <select name="Porcao" id="Porcao">
+                    <option value="Colher de Sopa">Colher de Sopa</option>
+                    <option value="Colher de Sopa CHeia">Colher de Sopa CHeia</option>
+                    <option value="Colher de Sopa Rasa">Colher de Sopa Rasa</option>
+                    <option value="Colher de chá">Colher de chá</option>
+                    <option value="Gramas">Gramas</option>
+                    <option value="Litros">Litros</option>
+                    <option value="Unidade Media">Unidade Media</option>
+                    <option value="Unidade Grande">Unidade Grande</option>
+                    <option value="Unidade Pequena">Unidade Pequena </option>    
+                </select>
+            </div>
+            <div>
+                <label>Quantidade de Porção</label>
+                <select name="Quantidade" id="Quantidade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 </option>  
+                     <option value="10">10 </option>
+                </select>
+            </div><br>
+            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+            <input type="Reset" value="Limpar Dados">  
+        </form>
+    </body>
+</html>
